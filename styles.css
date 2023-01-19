@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-image: url('backgroundpic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 780px;
+    height: 100vh;
+}
+
+.nav-bar{
+    display:flex;
+    background: rgba(4, 23, 33);
+    opacity: 85%;
+    min-width: 780px;
+    font-size: 28px;
+    font-family: 'Lobster', cursive;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.nav-bar-item {
+    width: 100px;
+    margin: 20px 10px;
+    min-width: 165px;
+    color: white;
+    width: 25%;
+    text-align: center;
+    /* border: 3px solid #333;
+    background-color: grey; */
+}
+
+.nav-bar-item a {
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Lobster', cursive;
+    color: white;
+    transition: 3sec all linear;
+    text-align: center;
+}
+
+.nav-bar-item a:hover {
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.nav-bar-item a.active {
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.content-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.grid-container {
+    background: rgba(4, 23, 33, .85);
+    padding: 10px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 275px 275px;
+    grid-auto-rows: minmax(0px, auto);
+    grid-gap: 10px;
+    grid-template-areas: 
+        "info picture"
+        "links picture"
+}
+
+.grid-item {
+    /* background: red; */
+    padding:10px;
+
+}
+
+.grid-item-1 {
+    /* text-align: center; */
+    grid-area: info;
+    color: white;
+    font-size: large;
+}
+
+.grid-item-1 p {
+    margin-top: 30px;
+}
+.grid-item-2 {
+    grid-area: picture;
+    text-align: center;
+    margin-top: 5px;
+}
+.grid-item-3 {
+    grid-area: links;
+    display:flex;
+    text-align: center;
+    margin: 5px;
+}
+
+.info-text{
+    font-family: 'Roboto', cambria;
+    margin: 5px;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    margin: 10px;
+    padding: 0px;
+    /* background: red; */
+}
+
+.fa-house {
+    color: rgb(36, 151, 147);
+    margin-right: 5px;
+}
+
+.fa-briefcase {
+    color: rgb(36, 151, 147);
+    margin-right: 5px;
+}
+
+button { 
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    background: rgb(36, 151, 147);
+    cursor:pointer;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: rgb(22, 204, 198);
+    color: white;
+    cursor:pointer;
+}
+
+.fa-linkedin {
+    padding-left: 24px;
+    color: rgb(36, 151, 147);
+    font-size: 40px;
+}
+
+.fa-github {
+    padding-left: 24px;
+    color: rgb(36, 151, 147);
+    font-size: 40px;
+}
+
+
